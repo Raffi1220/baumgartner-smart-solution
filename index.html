@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="robots" content="noindex,nofollow">
-  <meta name="theme-color" content="#081525">
+  <meta name="theme-color" content="#0d0a18">
   <meta name="description" content="Baumgartner Smart Solution – individuelle Apps, Web-Anwendungen und digitale Lösungen für Unternehmen. Entwicklung und Beratung aus Wien.">
   <meta property="og:title" content="Baumgartner Smart Solution | Digitale Lösungen, die weiterdenken">
   <meta property="og:description" content="Individuelle Apps und Softwarelösungen für Unternehmen – von der Idee bis zur Umsetzung.">
@@ -18,12 +18,148 @@
     @media(max-width:780px){.section{padding:78px 0}.nav{min-height:76px}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:76px;left:0;right:0;padding:18px 24px 25px;background:#0b1c2d;border-bottom:1px solid #294456;flex-direction:column;align-items:stretch;gap:18px}.nav-links.open{display:flex}.nav-links .nav-cta{text-align:center}.hero{grid-template-columns:1fr;gap:55px;padding:69px 0 104px}.hero h1{max-width:620px}.hero-visual{padding:0 25px 0 12px;max-width:640px}.screen{transform:none}.float-card{left:0}.halo{display:none}.services-grid{grid-template-columns:1fr 1fr}.statement-grid,.contact-grid{grid-template-columns:1fr}.process-grid{grid-template-columns:1fr 1fr;gap:12px 25px}.contact-grid{gap:24px}}
     @media(max-width:520px){.container{width:min(100% - 36px,1160px)}.hero h1{font-size:clamp(2.6rem,12vw,4rem)}.hero-lead{font-size:1.03rem}.hero{padding:64px 0 95px}.hero-actions .btn{width:100%}.hero-meta{gap:12px}.dash{grid-template-columns:86px 1fr;min-height:250px}.screen{border-radius:12px}.dash-side{padding:14px 7px}.dash-main{padding:15px 10px}.kpi{padding:8px 6px}.kpi strong{font-size:15px}.kpi em{font-size:7px}.kpi small{font-size:7px}.chart-area{padding:10px}.bar-row{height:62px;gap:6px}.float-card{bottom:-36px;padding:9px 12px}.trust-inner{justify-content:flex-start}.services-grid,.process-grid{grid-template-columns:1fr}.service-card{padding:27px}.process-step{padding-bottom:4px}.contact-card{padding:22px}.form-row{grid-template-columns:1fr}.form-foot .btn{width:100%}.form-hint{max-width:none}.footer-main,.footer-bottom{flex-direction:column}.brand{font-size:.94rem}.brand-mark{width:39px;height:39px;flex-basis:39px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+
+    /* Baumgartner Smart Solution · restrained neon-violet design system */
+    :root{
+      --navy:#090713;--navy2:#171128;--ink:#f3f0fb;--muted:#afa6bf;
+      --line:#30273f;--paper:#11101d;--white:#ffffff;--aqua:#bc82ff;
+      --blue:#8c6cfc;--shadow:0 22px 70px rgba(0,0,0,.24);
+      --logo-url:url("data:image/webp;base64,UklGRgQmAABXRUJQVlA4IPglAAAQqACdASpoAWgBPoE+m0olIyKmpFOaCNAQCU3byidqVw9onlt8g91v0X7v67OUV01l7+299D/sesnzEfMz/y/Xt+6vqk/cf9u/ev9J3+P9QD/L9Sj/efUg85v/3ezD/gv/V1AH/59QD//9bfGZ5ufu/EH8f+z/2X7F/8f2HtEdq324fc8QPzN1Efyn+hf5LiQZyfUU9sPun/Q8SH+k9E/EB4QKgL/NP7P+wfu2/3XkJ/Q/9Z/8PcR/oP99/7/YS/eP2gCLxosYBx3xtwrONq82rsa0fwltxvv31A+YtuFixnEWw4fry/faJ1NlYMBWu8K0n+pT8EIrctDeBNPUMN+kkg3dYNY0NYIi0dL3DAlOqLk3Uu4Nq7vE+YMYUOgpOpARFw8/XlJKk0euhryghWZBcFf1mSCQU3lvRbG8Rcuk0KrEZGZBD47t8pm4gEgyVtvrqNp8AvpTeQWLrLL/tWmWVM1R8bKGM0epGBsczKouju67geZKtQqadBxDeM+07uig4X+3Y4OnHxjfClpb0COZGFHlPDq1NVANOmKKx9Hz6xu2sS0NuMQOqpxVzlKuK+8pAo+PkqaxlQycR93TizamAex9PcdPXMVKrrnJjC2gNSeZvxAOrhq3uSw+Hm9UlSKKhJFmpFWGHTd2MhSq1IUz6E28BZNWNUpVeQ9adcKM9fQsLzDsdw4pbTONWv5mv34iHHW1dYBfBHMKko9TXDlrjWvzI1NG1+z13GvuapS36JUW8rb4frdCXMRk97R5Mkj12mNfKL+Jy5J21RR/ednNECwznAKmfhZuNeFLQ94y5ATzXpxIYz30zPVh+/oXhZCDlosd12+uct+KpoS0ry12JYvrKr2sIQBZjyrVft6cIOReaYIWGOoKHQDHTmoqUqM+cyFQsOVIDIYARfcedTzf6WsHomub2AcTjauuH4DZiLx1AWLwD/SqZ+EmRssc2Q1rFgPc2t1qLmBxovoWBvyA9PfdfRIamk/dyLgC1JITVbmLf+jXe3cElaz64+YinKP64GEqnx4cT6umPECBExNo8eQr3QDumCD29kt4eV6gbudebw3L3ep5MyZlxr19GoC3qcCyXWZz2W9TuEomgtu8wImxdaXaHQ2pXBXSyXhbEgCrcYVc9JkVW+wsd1prtHzjkesI+s+xl9MJr/eagJoQ9yU1AaMCtiEpgIm4Mzo6EVPH/ZPLrDBWvPq7SeLG06QrUHnf+6CFaFysTwan8esNLbInlAN/bO/Ff5fV2wbC7bZ1XUfFMwTYZfQ3fFpY1866R6e42ZVCjZRWT/FX3Ews9CjEsUt/QZjNUQh2LuCPB47wzvoq9QrsqcGtqTsSAf6pEFH98x++mOPaJ+uUJqVZzxrb8lwB/QwU0FT4kGpm/e6gi6k7XNGr0WjLrQGEZsAEyGVHQ64Q1vNPTA/S0y8uSGdH+xsQUaxm0soKwnUf371yaLRN4U3TIAJmxAUOggtK+mRSussnDNGy57JavCmidnx08cDcy7YP9c3mxguHGbY3xwWaPDHILT3WMCLAlYW3OHRi0AuDzU0tyWAmcvSjDHMufjf0ZDwxegK1YA+Ze+CIou7hkn2ih8mOWEM0m7eGAJYQXBJDsrVpSjYk3pROo14CvuJxVkdxSBaasu2PHrx5Crp/I/pwFreEHp2aL4TxwmKo83FwPQf8+iGmlgKd9nFrPy4EPxP8Dw5VNT/TAdlzl+M/z0xew+rF7PgLMHMj3bjTSf6LrV1xHuGyyEIrt7NeMahjs2Ja9iVbOSI5+Fao54BHHHKnrR9JchEDBvq/+xGqQ7JBC8AA/vtWP1RSp2Kh+1lhxdF/85j4onpDAwup4hMAqBTYZSVwL5WCCETP+0jMa4MzZgAH+gRwblMQh0mvYsuEPofjx3SLhnWQqmqaXPJAAVhYq4sQ/QuhmGabt4cN5JCYYEnL/ah6Vho/7WKW6eXtM4VwagSh64zzsGW8QR0W0uAntoHgcswUYnzXkNov5mNfbCJRaIEzLNRMBQWt1G8bnHBrqhZc1nHEuHQteBWxVe+n2EpCPS/T3nCPFU5EHWVWMBFHgVBcOaMxddzJP2+1SSJgZdqAfVWzOwQsj1UTDYFQObJHm5Fmkp/2IjLWzRgAwcfIOI+7s3CMYGZ1EVTF3dczdv5Jy/8nRsOAnot5RDldtIL/wV3apMEqvDMTA/mT2D0WtPJqV6KGTKvopIxdpD5UNb/yJkRBt0V7DMhtZplnmYF/c4ULzdY21wILeFkbEGhGxBdjB9ZwBUACYsGNYoWStHgYv/j5sLyNYXm83FrUQYJUfQpuPBkYAY4syEbibLzMyJDp8/9/8B/7DgqNHthaYv60tLbO+ge8JeCXf3WchVOa65dSRYufSEau0pHVkqsuGD3xlGtUkpnFekUyFkrHtjB1xu/SsYa6cUVkPrQDn6IOPymQ+0jWV8IyGz/s1UzmPo59X2VbcpgwDmpq0RdmelQQ3qBchB0LnF0aQ6i4D8DnczWhSLP2TOorwdMQeJULPuSEOUeuyK9cKWJ7PYX88cYh24vuXB8fu6/a6nallyOyKrEi2tHKefDKwKKHkttIPpr6FD/zcC0NfZOV2VCrOxvaRIlNq+JzGLRwtyo4zmiogJoKOKIl5XRm/7QLoSTWABt1VKonQQNVvXXkCBB77ESSkND6EKU+kMd3FTd3/X1WP7f48NNrkSaPn0ns+edL8MQhELFinmTQ9Z+aoqjNlclSBY7cWfWlXt6ZwVVPKsSB+h8lF3Mm/F3nlUcQWjXE2/B1tWCr+dS/ZQ+/+abc5+FA4L39SU6U5pZ7Cr/bWP0tBYT4tmtiErg6NZ9TiKOqmAfTv/SoGm4l85K4Y+xzItbKUdwZorlxBy2MxQH2qkgdLuMpgQIYEJTzuBHdTxn9p52GlX+PQLcX1Rq/0oiWCLXy2+sExYIr/65WqL8H1q75QOCWjL5kXeZN66bsymL/RvJhTUhrzqHWXs1uH5Af+EPfsVepbqcQDkp0Aw7jzKmJMQC9ROkQTJn4Oz+JL5By3LEsc0rwh3yCziARjxGmZIsGc08221j/oyyz2OudLm+5Qej0t0UDwFpqXW9c1fTgG2ZDJmMrbCKlXWvTCEmbNNNO8yBNWa95DWfi0CM55E0n/3m3bHcVoNZMj9u6hjTz/uzMiSs9MO7FdnpoW356OlnLblkd1834Etc00irCS27jXfF0BTL7lpXaFO+TEdbD+Ts7R93hlj8CxPJdUzWOLuG+7i6I0R30MlLYEkW2aHzHztegi0dF9aN2FUZKjJCeIFoLOSVk1W3OljDDK57sguExL8MM//DXO7fBMhVr1nevt5sozVHnKg2Ady6U37Vbt+Yw6ueIKvBPxu3MXL/rSQESMLLM+SQwXqOQRFYur59QaBSOZ+E/UZsst6QpSBkvVNCJI9MuHSqSlP5Sc8I/QPSiKOTWah57VyyJZUzxEDHIfzEkvHf7NsCw8doQPZEebiCkVzoBr6f7KhqqxDWEPnIY2HDbi3ng7fulmh8YbREnDCUHTzoSw/IbrYXzsNzBZuPB5T/wOWgReAIH2LShw7t9H2j6jezmO9r8HgqgbnqbFBDNkQOG/szqCPlHxHuqP4JvB4adlQUMoFg8OrkVjn4fEXKOYImedY1/FEMY2TV0+C187iLNyDQsBxquiz6wl/fG/wp2aqkPYA6KCHjn2vaGl0bywNZoB1zZoy2KnDglOgjaqM1D5Zj8Zdt/xaC+k+vLFiRfBTAc6rT7MdLZw3h/oDatjxj7YTza2Z7ljBBnPKQTLMlBtCeK+jDOmrA/7TuGtRpyTId7Puw0BMv9V3FkUqpQhj0Grj1rQIuSRzDIf4IACXqs+IncnRk1FQAC4O1L1gWusm1qH+LlNhqnbjLS29XkNcdWucvWseGTP/+oTPHnzIMEs3LGHh/H6cTTuz+3M21gZvEZ6LZRVmkR1k+/IdCk+/KvzECdA6xrR0sQ6pGNZoNuLd1TPBVJpLIwxIhnB+FOIB1vM0kBb4meqa2voujlCS8eI8pW+M7CDeBun9F2ChIsveewlOl6LuM8fw2uNvBOyQMknVXuZvrKsWUWZXg9Y4zSlkU3pumncs5Ie9k0gUG8jUuePuRFU7+jnR6cl1FKCEkTXTRvjuxLOjLZE8mUlA+/QNbxcnxLVxxsSHFrWyAKBBM0GIzV3s5beF7OpJO0ccHLxAdRaryZf5IjBV5T32TXxtRQc9p00dWK2nrKqRNrs9qArXuapqyoifcEW87zszDj+7FFa+ZSN/eYzggrktT0rOzYyC9xy3bYDQt9kLkSmFbAT1NtPjTKp7O7tBmKG2Fn09oesA20rt1cRL0EhUqEkPLN0JUncic1CrjEGBY+3UU7YO4ptrg6gZAoBG2JGUoFh/tg89UCyxFpu0EGYaX1MESM6pP5CGOc7kPUnBD8O3myMFB+ggd3eUDljMvkdnD6GD5ipE3+tQ2uL6twI5uahdxMaDGJW8qxYtzCozDXt/OFNazXRFe5jTg6cNwcJl9TneFxCf9iJL1y8anSI4ystvqdn5IemUcBgbBfWH8aqOAQa2ohm8ZgPmZ2dafE99L6SFcHKmMle/WmwfQ6sZLqObR5RLJliGX95FDlaMFMV4HrE368EMQvnIAqDw15llo9WIjqFbdlACrHjNs4qBq8T6J9eZF7NzRb0m1a0EJ3d+MclYa0HEpIwtFjTZasDD+n2bgzHkMwgivr0DH+qBwDHHNPERswSvtJ1285tSWrHWdUSIXnBHzneyLEkHN3uv2Lvtu4XgcL9aYRqJRiZaNDoYzNPBipBw+f1Nk3t1HGsRjrkCfqJW+0WFX+WGgbOkyUpWocmKjzr644b7Zod8ESyQ9d2O6XtG9QfPYFvvPmVCSB34obN//8wURlp1EXPhoV9RraADAp86GYylyMDoq8Yw1HZMuF9Y1NkX42m1BamIc2FiFju2hV+ukr5kVp1++VFfh4GuFhYfJyT+2BZECLGojqnDLurowfX+JVOthpx1dU5Fhu/GqiEuVkfLuPbw7+oHryIjc9MHqF3qtvQQdZfxrGJDdDqrl515TNgXRucXwTNwCZCCixvkiP7YN/bXxfxxHDRfaitiE7yPS5QQ8sxhfjtsrs7hopomAUfy6r+bH38YBjw4j8En0PkcG17YltLYBaP0a0ti3kLA2amaXghtwLL251Frx4YrDZLsSdRROwhHNplnjRoe/ubUS173/pLdU8iOkOiyiIgyQCGM3eUgfQud8ZZSEDgp1+nWJMDyj08457OBJXudmSqdFKCdBEg6oqNrxlG2p7DimBKkBJzmwMpcbdtwMS+qWqSsPe+qxfUwQdK9fU416S6Yi5EUqBpXa+iJw9dsVaJOFV+FaCQ/OJO/lkfLZieTPI0uCKQXf7SMaAL0To7O288MHtYsrPbNLGduTP6GRXfaN6haMf9N2KQNpq6YBXWXcgC/Fn6vQ3tIEqn/U7dMxaWBgsUnL8FCSizWar0BMPRydIQn+BhKd8+71CI6mUcljwPDsU9g4rvRggxZXdRMSfR6xKI3QK6b4fjuyMV1/anWWomdGFuVZHaceWR8w+pIBuQA/KGkZBI8Vn/IkvjHxCVK9I/sOYvNpKH2BIDt7USGL5bxbkf96Xw2vwgRN9lXc8JFkQ5eANrH7elKFdx5NHUUsgOv1NoM8wU68osWnKAMGWEd+fDl0KBO8uAj8hiASjyEhLEzjvE/h+iOpSD9zwGook7aIEIjOQMS0gVHntTUKDUx7SpvpdjVX8syQG1mvjF1w2D4iRMYrfaKelnw4+NhI0/lm2hGXvuOBjdmL80PnNkv5gXjAf1yEQblrRc+5Iz2D9PsQb90IrZowkwkZ9KBj+oolDz/hatOco3D7pvgtuWjFVxNHzR14DFLo8umayGxl03UtBYADl1gj0fdG0ry98VK8GYLGJHlhs6eJ/d4NvMSMCa9LO2UOd3Oxyzveexbl6rwVW/Jun5napS+DrV93o3RlHksAem3NF5ZQrH3/5IZkDc3Pte0uh3uCstRVSr/jP8YJbDkzwOz96fwjQVRb2wpyR3iT/yV8I0EN7Qc3bkKV9Q2KGed44f1SkZ5MFnGeyEdkyKk5VbjOx7/pFJGc/BpemIL4VLFggcsH/TldVi7ilcSxIxBUIWcF1Uk1vDE1h47SfkkIlgp3UoNhc89OMLBEuxi0OMcJVOA+8a6B5mC1EPsarvFOxkTPzeIKaekyeie7w5trp1PvTdiXmmLFhoRgIHE8laotJHIBZeUP1H9AlI4nFTQHBZEBZmc3xC/nvHtcVh94YsI3wqf1zGts++aWDYGmkPRu1u+5nSnMZz2d75cO9fbT0tDy0r0Be1voG/k6TvjQc74ZBCTyJ7EIgI0INwIiaWP5H+djaPwvGVDXD9t1K+A5Uaq6TG9bwS9Og1llkNgl9eObdBkWolipbFBdmdDbwgnrEwpM1Pc1koa0aI2CEAyAqTvm4l3fvd84/5Q1H3xamj8DygJzZ2KSZgBJUKgqqYJ/5clHXqaXp8YBBXKXHkza1EKXPgZ5O/m+2nVN3f57iDM1NHF8X/c/71QENOUV66t5aVxFbdZ9c0C9qL2Qw4AJdDj9txtxp+QQtEcUeA0jHqmSQghmqiSU6TbMWh43Fg4v4eQrxdf9vEAwL/XZAv7BLqF0fwhJjCiBEIFKcq0pmjJy+yqOsLx6VY5pU7ODygQGphZcxjtfE+VvgW1ngYvPeTojK692D48iyHzC60Zx7xA4L0qCUAmoZ7xSJjdMkY8FPVeBK5+LPSX9TR2UKsjzS07r+pkTO/csS91hH4382bcKPQDIwRiG62WXhHRVaRYDGju/Jl5kHD3BotZvQO7CwetvztaxiHG3TyxJ7edvmwbDdBJP6K6hS67QKmF32+dHeS6L/R8hMbM9uyiUq60Ig4W9V2Iu6mjrxyfiNh5YTiPmssOq8eznCnwCp/H+E3VMsWRowujyDcUW1rwbDXubwyo0pJef5n68eO6uOc3eP1Jda6rS9Uj3OIgaxT1VvyKwNTkoDvySkMNzI5IM7hhGn6CUW0rO+SkWyKUOl9d9xO6WZMpi21NJerO18jm7STSoCD65xWSXWjR2EvgfVQtgKr7slDDWLzYsxSabGVY9oHV6WZ6P7gv6kR0k1zyOtZTwPD+HrtPn0EfFhjWzOmOej8ggX7FezEeZYaddCa1hPtoY3AmkY+Q/WXdn7GJ2zi2/WwCppQLd2fgFHT3//oZrjOExNlYsluHofHdZcCFH9RzjFnsmHj7UL/Keh9RanjwVw7OzPd++31dcjhOsKwobMQVSzO6rEZa+jC4W6GOhmuRtFsOZF+cWwzbsuvK9uzuUDHLFX7wBjFqRWECuw7vvbhyQ7erxgRYfMJ7GkEJCom2THlSkD8p5RtmFraNIn/Quj/TWk2q156jf+aLqV1Fg+BYm+0X3pY9o8VCDkqbBzgfVaI9R28pnMhhF6kt9zFQnG3/vDD7i/xilqDo0pYjvq6KtyfPKqOAmt3ZgQwsBO1v9gQI//M2v3b+/B4txK9ZpOIuywJX//6V737oOGxTYtzVP+TgmMVKFAGGicnVh+hq6kwpXc70AqqX+ebuU7BXocLlZkhWntMQDnBZ61m9XFN8C6k+a4wbsKgp1cS+E8MX6ZMqXrN/yEJWU4f2VZk/qeuaU/p7nZAC/hb53UHdx++OIpP4iI30J6fxegdGtO97wugvRk1JAvo3YLvlfZdqbs4JNbmu9Ugv/D8BnN19kMqwEN0gKij4ioo3PRiShfN7INUynQPzodsV1zZyTimOb1pNUR1wopAX6rEVsy+RGf2KCM29StS0PCl5Kk4G+dpfzHNPeTgImc3X5V8P4hF2Iq02d3xGJQoJavEqjiZRAcE8OjHvQtHXBeleBMTqAD/yt3y9Hb0zysmevrJ+SqtBEFywt6rzeQ4gpJedVWxhBZbVPlwSs+BYQ0s3ok/a3/8mtd9w+Yc+kfa++gx71uxRPyR8brxsV5N6LKgMn/UFhi9aEB0LTGQUk9LYGeDE1YPQ2rUxBQCdrV07UFXNBDYl20MUaj2jcr0ai/9DsXLdXTHUnkPszaUHZSJaXC3vKXL+W9hMPS41oakbFIEeOoUT08AqT57oDm0j47F7UchDD8yFNSh5Z55QkD9oYC2Ax//to50aZPsdFNFmo9fNzu42MnHuVtALOCxA+oCRpMKr5QjPd/gXJRSMxWJuA01R1nsdLpSV9188fo1RicJ8/fJvG6NuGcgjMkYXRtXBQG07PvR9ERQa6eBCeygaILNzui4YC6Wyfkit5B2n+Y+JHsGZU27UA8oqfoR+ZKRFdiWYqJbF0mH22EMi0SpC4tG7YztHOyRGfSPRKhZsSX2pL3SrEK0mxuvR4gzAH/ZsPXH1D5Lht+H4oLma9bF/mkfv9eFxOV3RHib0gIS7G5Ugtwwf1T3mpPs731LSsH+wk3beSme5WvT4jxa6IggufvADViwb7OWOHJ7bI9IuuG2BGrDnllIrFco7kJkrCWRsvkijinOdITSvNy+rx4OjHVd8eNc+mzgKvZfOCYogCm6+L7qAvZj+IAas1+LFy82VnfniVhr6LnZk+DskSJD8SUI0jP8oGIA4JOXJOpEwjqVyGo/9VLK6YwH5TkkK7T6YPGWVzvsh4lr+Qd9dKZpZ1qwdxux+N0654JccMvCcHrkXE37z6XoInZ8aFQvlZ+SsOXgHX3XEaZtbfMO6TmFLy3sztpCN24IA6Z6+9Kj3vGGrvufG6PDfjorAVpZzYUMfsxvz1HeYp/mIlpSYw1z9BMjFVOoAsugKaZWOp3yOG1HwjsFed9rmE19Z4r0NBEfD51Kpc42IAApXVC3c3UYePNcMtKe+R/+COm7jDfqF9E/DqmoX4VEiH+Csizev6OGBNb5gO/GNzGCr05Qpg4nLEUw9TnMNrsUwATnqGFyV06BQ+b/xVu4sc1Xwdt85E+zcQhJSH8sFawHSFlNxdzlT/KBfwgtaF+08YwsMcW1PLJTjvpp6g6y/6e/hinGt1Jt63P21gB1fOH0dX9TX5KMcvmKyToC4Crtn32MDa8V1bZZuDTX/0os8JC03NX1LiAphftSvj6pY4W/vR5F9AOTwC41821pQquI9Ovp+cQY4AO8g0kNiX78hF91MJUw4YPdFAGX1McShKCZV0nOBMSDT6fLSw+D71xmcdXw0ZK+25b9vfUutYMKXsLKBKAsOghHKrUpPoCXlf5prHZ9kuWXDqBbXLmUKr0tOPE26K3KzAdvXemkV21DwgHaOdEynG2rmibWkwsDRlOlQrJR8+W4PUxWj9rkcJKUvR7kTRymmZY1FfMxS9OxoyZGp0I4MpcRau2Vt4bc+NrFcyyGBjKO80ur8rztuigS/y0q5HG0mKMh4i0GBDigNcHVuP115JzX3vnc7WuugzZGemxtGdQCCxXSOhnFQkN/+eGFrm32gUEVWKYefRiwlCBne9nGtzXJC/bElNKRfA+FCkHejlqYlN+GucVgvtMXoE7sy8vcRfHlKPc7iIaSBsKFAprl2M1ftMx++JkV+FsI3BsiT8LGOvZoBMrCWGTJCeZo3ef4CaUGL5H8cos4HoU/lro+6bbPLWZA5wJn7DKWJm7cUtQwNaMr3ptQWeBd1IeISyUup6CgSY2laW6LMVNqcnvKAhH3k18J3coStixjV/xU4AqEZ+VnCmAjL/Kl8oBngsP1ciDleeT1EmIhIueDTHI9Nl/4yjUvh8cRhAcbdSbu1cwAyh3AqcKl+6UqlQ4rbxgnCRiFqgzE4pG8m7nhXrlaUslrJpk2y9b1poxVJvJzuWsZAbJ7uES691l3EP4Y3vPn3tzc+yE1UHK6wtwrTi0pnr2s0lxsOsJFsFG3nLtJkAvh/RuCugtJ3F6b4l+1wFEPRj7EYtWwNu7j22AXEbc5Uxa5INGXhWwkNYWhOQPlrFyyxj8HX5F8scH5oEwQ5mZBeLioBthKzm7JLnBhUO9IJeFRSTvfTNm3TZ0x4W+RLacdxczNbFScfb+B6PHK7xMqbHeuKuJR5SgziFO6LaGuesKsNRYmBWJglhytLNx/SUdVvf2PBzlDYBno6vUqcC4s+PPV7IQtFXgmB9e+seb94fN5Lj7B6YvtLXwnPe4yfx6Ev2ePSYRSxM4WJoCFh5xoWLiBCENyFD88yNDOjOp9vvfCwBLpMwCKoMOAw6NDhvJRRErIICAdqtizQVUcqBBZylSWNCkxSTe5QMBz2LwRVLkXbsAJAPAAoCY07BUHR0SHEjVjoa/MLmc0l/0bn0fpAG9XJLWxz+zdPFWMl5WbwND5mrDd8pmYj3DtUDq2QV6YkdQTkrF8Tf+/k7CuP42pu3qImynTgcwv+vTD5BduIsWR9C4PQqbF1UTSR06ltJVJ0t76H8ivjYhBuQI+ve12d/I5yVvDpNlJ6UZfCQcQB67PlToGMywtNgdHZW0TgsnYSmkUnYtYKSy0y48T7VQlRJGZdsrgTAWc0ERNhmsjgK8ETsXdYXWyupaGUT5qADoxb01IhdHNfjJgymCaLeY4Iulnzyk6i//idghrEUczPy2WcQQzpBBisQ9j9SvmmdIfHOrXI8DXwiQ0M1GzoMKxplBn4ZHhzc64LfBZgwdET7Z77Vxj2GaimSaEsUwMkg4LaT8+pMIPzluC5OSgh0wvvhrmMKugS32eaXVjQ15aZo1/EFTVF6BhZU3soUz/0RL+71LTsJcEs9e9vRhBYwjjsswVBnzl05XxCv5PVlMwtOkqdl7f8m81ebsF3i/kT4Ca7d/aFP956piRXcGHkAn2wVaciC8e/+bkdn0DUQOz5ICRWH319oNH8RukeswrcduIznfLl3Pxx16nSHs32N+Wq3Av10U46wYwjhfaCtidsnnxSF3rYC+zXQNR+mHadu/clk88c9Qpw6sUufgPbOB/T556HVZnVeYwZ9XjV2OH3wb00z/tnUYB49QyqGgoOKNezlz52qRmuT9LuzD2n6bfCFhGqv4Wx40q1FrLgdOBj/DnI3EP4uF0PE5nekP5A5NYz/S61ko5fQ0cMUAnNJ27XX/Xto+c08j6btM4+kOY/w9TqkHrk3ZOVXwGleTqOnZhX8KVpbY0B5z4Z1x7n57FqIdMK0u1pMV1Givx0dPQOvMSyv/JzZHZ2DyQ2N8zIGcOLjnA4bySPiNCPjmg+C4f6ouzDUl08eGUXPsOzDEhJG/0MG+Lu7+37FBcwH0yy5TO45fUtxXuB2Z2gzG3vxGYMFZnFkZhqjYtlrn3USVi6GjT9CAjclhs0h80JaH/jcoF8BXaGQ5aPQlSt6ccJ9FDxF/HX0ntvwMrZF5YTYHgA2VjuvHksRP7gxzmkKdctcR77b8CfHw7Q6wnGlm+HvjF4Z69YOe6BTd8wYqtnmKHAgjU0b1K8s8fpCjN+FISJAfQIz+SfZeguVG4IBv42bH2PmGxviXEFMgWIk4aiwPj8dOe82fsmP3jbpXv+Tuflq0uasHCHbCwFr+1PHenciwEvSGfE5NMJwkYuwXy996P45AYz3KsxCQTs+Q2YCE+H83QT2q2HHQen6BVNPFplM/j9VYm4SFKOJj/BR0NDRGRpjwbjnlbFdSJOZD0Hm65KM+2DmYab70LVPVd/hfuVxKDrRytR0QjXBpe5U5TeAzaN0127X+bCRko5tn7Ule5Z7gUwkCugtmfAnSo3SS+84f18Sj3p6BCzfzUe9ygDfVQeL93CBbaenf84emDbVZCKDy14mFdnTm+lQflhbEt+BfJZ1RcZ0ZcDWgCePFCzz0vOHvW36GJ5mhyM0ylSHBrapdcteECft9OFFxO/KpDosXHU5Tu6SWfN33bsLiclJZSO39cnAZP+/gaVi/O/WDK0KHnJRqQTo5gYhUxi2PxoRvRIJCK4fMH/pItt6kOrOshLH1/ZmXpgAeo3+JAzbezR2wxB920F0PkgqjrU5jWrGCozVKqXsIFKqaBDpvxixWtcb/+TOr2T50L/fmAeeOVynkpZFXPWnB6zVKBf8J28EVX0UjTS6XWAnURtljuMRGS/6F7nF6mpaWMfl//nsJEYbXCHrOILxysBJk7Gmf4757vS+cJtcRdNMMCqzyGeeqJchnA1DWhbFY3fimK/nCHoYZcfHbgNIyfcZY+95QcG8vQS57sfaCQqbCxB/3/gbNXnKLHL+D2gvpp3ldfg78F8QxMIjrs/1wZTsKkartyNI2OHQES3BQQUbCy4xKsdpDv3or3EJurkC/pUs40a5Hgm4aR7sx8q9xG0Yop+u1D9rh0Q9D0Ip01hjlc0Cc2C764PV8UoEjkaD+/D95+r6XfXd8wJ741pXhWIC5KPLxmozvOa2wlZPd1F38veW9JslMPQhUJhMxaR0EPxb2WpepsuW0AwDAGlRt2ThM8Zw7QKWMxKchK/YblFGJCxVbQNFARi39F4o1YQ6w3YPYCgsBiflzyvnqwbts0FXdNmM5xZYxc7fR0uDoWCugKUG4v7HLSJ+ZsiYUQjLmt/Hd4f2ffaYHw7BECQIp60ChITtniZsGNm85eg6PdNDskFrVsyBwLIpobsSu5eP+f+MraDSW8CwvHQ4Fi94BNir52/gfw1sQG3VKOImQBHxPEBV/yNDxNdDeQxm5MveIWRb8iE3BPvx9/uuWsCGFTidzJX3kL6Z0p6of2mNp5shDtVBeyplP53xkQsV5uGwLYajjvJse1+2ScgKtDx3Q7LZqgmCMnqZ6rSVNK/F1tBnRL0rKf3IB6StIV0qU/oYY15pMNT8q1cdV8SaC/DM5mrq+3AzHh8gSyI6DXZJPfmeCs0igtz3r3W3PlqPYCwpFQslKUZMr+He4RlW6odvD7jkX6e9/YDbXkIk94KtahAaiRYMYcquEy4TqHx+eeIECGMWS6bUzzJKlSRE4qSE/rExD+G+XHQvQF5Fpm+6k/vWU+1np+YoHC1MnBDPdJLur26/IahviASb2e8fVdSLCE6XUNpj1temklj/UUONKAAA=");
+    }
+    html{color-scheme:dark}
+    body{color:var(--ink);background:#0d0a18}
+    ::selection{background:#9857dd;color:#fff}
+    .eyebrow{color:#c69aff}
+    .muted,.section-head p:not(.eyebrow){color:var(--muted)}
+    .hero-shell{
+      background:radial-gradient(ellipse at 83% 25%,rgba(107,54,180,.24),transparent 48%),
+        radial-gradient(ellipse at 20% 90%,rgba(74,31,123,.14),transparent 45%),#090713;
+    }
+    .hero-shell:before{background:radial-gradient(circle,rgba(135,74,233,.16),transparent 69%)}
+    .hero-shell:after{
+      background-image:linear-gradient(rgba(173,113,255,.034) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(173,113,255,.034) 1px,transparent 1px);
+      background-size:60px 60px;mask-image:linear-gradient(90deg,transparent 20%,black 100%);
+    }
+    .site-header{border-color:#4e3b652e;background:rgba(12,8,24,.34)}
+    .nav{min-height:88px}
+    .brand{gap:14px;color:#fff}
+    .brand small{color:#c5a0fb;letter-spacing:.14em}
+    .brand-mark{
+      display:block;width:50px;height:50px;flex:0 0 50px;padding:0;
+      border:1px solid rgba(176,101,248,.27);border-radius:13px;
+      color:transparent;font-size:0;letter-spacing:0;
+      background-color:#10081f;
+      background-image:var(--logo-url);
+      background-repeat:no-repeat;background-size:120px 120px;
+      background-position:center -22px;
+      box-shadow:inset 0 0 12px rgba(126,57,215,.16),0 0 18px rgba(113,48,214,.13);
+      overflow:hidden;
+    }
+    .nav-links a{color:#d3cbe2}
+    .nav-links a:hover{color:#fff}
+    .nav-links .nav-cta{
+      border:1px solid rgba(183,131,255,.34);
+      background:linear-gradient(125deg,#9870ec,#bd84f4);color:#10071b;
+      box-shadow:0 5px 18px rgba(135,69,216,.17);
+    }
+    .menu-toggle{border-color:#69518d;background:#21162f}
+    .hero{padding-top:104px;padding-bottom:130px}
+    .hero .eyebrow{color:#c99bff}
+    .hero h1 span{
+      color:#d3aaff;
+      background:linear-gradient(105deg,#f0dfff 0%,#c18bff 55%,#a57bff 100%);
+      -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+    }
+    .hero-lead,.hero-meta span{color:#b9adc9}
+    .hero-meta span:before{background:#b382ed;box-shadow:0 0 9px rgba(186,115,255,.45)}
+    .btn{border-radius:11px}
+    .btn-primary{
+      background:linear-gradient(115deg,#a477ec,#c58df5);color:#130c22;
+      box-shadow:0 7px 28px rgba(166,96,230,.17);
+    }
+    .btn-primary:hover{background:linear-gradient(115deg,#b686f8,#dab3ff);box-shadow:0 9px 36px rgba(166,96,230,.24)}
+    .btn-secondary{border-color:#67527c;background:#ffffff06;color:#f7f0ff}
+    .btn-secondary:hover{border-color:#bd8ef8;background:#ffffff0a}
+    .btn-outline{border-color:#665379;background:#1e182b;color:#fff}
+    .btn-outline:hover{border-color:#b67eff}
+    .btn:focus-visible,a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{
+      outline-color:#dbb4ff;
+    }
+    .halo,.halo:before{border-color:rgba(171,112,253,.20)}
+    .screen{
+      background:#151022;color:#f6f0ff;
+      border:1px solid rgba(163,117,222,.24);
+      box-shadow:0 32px 90px rgba(2,0,12,.56),0 0 38px rgba(127,70,221,.09);
+    }
+    .screen-top{background:#1d1630;border-bottom-color:#332847}
+    .screen-title{color:#a99cbd}
+    .dot{background:#a963ad}.dot:nth-child(2){background:#b18ddd}.dot:nth-child(3){background:#8f79cc}
+    .dash-side{background:#120e23}
+    .dash-side b{color:#e8dcff}
+    .side-line{background:#3a3054}.side-line.active{background:#b684f5;box-shadow:0 0 10px rgba(180,132,245,.3)}
+    .dash-main>p{color:#9d90ad}
+    .kpi,.chart-area{background:#221b34;border-color:#3a2c50}
+    .kpi em{color:#b3a7c9}.kpi small{color:#d4a1ff}
+    .bar{background:linear-gradient(0deg,#6540ab,#c58cff)}
+    .float-card{background:#241a39;border:1px solid rgba(189,138,255,.26);color:#fff;box-shadow:0 19px 55px #0008}
+    .float-icon{background:#3a245c;color:#d7a8ff}
+    .float-card small{color:#ae9ebe}
+    .trust-strip{background:#0e0b1b;border-bottom:1px solid #291f3b}
+    .trust-inner span{color:#b6a9ca}
+    .trust-inner span svg{stroke:#ba8cff}
+    .services{background:#110e1e}
+    .service-card{
+      background:linear-gradient(165deg,#1d172d 0%,#161222 100%);
+      border:1px solid #332741;border-radius:17px;
+      transition:transform .25s,box-shadow .25s,border-color .25s;
+    }
+    .service-card:hover{border-color:#745199;box-shadow:0 16px 55px rgba(85,44,136,.15)}
+    .service-icon{background:#342149;color:#d3a2ff}
+    .service-card p{color:#b4a8c4}
+    .service-tag{color:#d0a3ff}
+    .statement{
+      background:radial-gradient(ellipse at 92% 14%,rgba(97,51,153,.14),transparent 45%),#181126;
+      border-top:1px solid #2c203c;border-bottom:1px solid #2d213d;
+    }
+    .statement .eyebrow{color:#cba0ff!important}
+    .statement p,.benefit p{color:#b8a9ca}
+    .benefit{border-bottom-color:#3b2c4a}
+    .benefit-num{color:#c794ff}
+    #ablauf{background:#0d0b19}
+    .process-step{border-top-color:#57416e}
+    .step-no{color:#c18bff}
+    .process-step p{color:#b1a5c1}
+    .contact-section{background:linear-gradient(150deg,#121022,#171126)}
+    .contact-grid .lead,.contact-location{color:#b9abc9}
+    .location-dot{background:#bd83ff;box-shadow:0 0 12px #ad67f055}
+    .contact-card{background:#211a30;border:1px solid #473453;box-shadow:0 18px 60px rgba(0,0,0,.23)}
+    .contact-card .fine,.form-hint{color:#b2a6c2}
+    .field label{color:#e8ddf4}
+    .field input,.field select,.field textarea{border-color:#4e3c60;background:#150f24;color:#f9f4ff}
+    .field input::placeholder,.field textarea::placeholder{color:#9488a7;opacity:1}
+    .field input:focus,.field select:focus,.field textarea:focus{border-color:#b882fa;box-shadow:0 0 0 3px #a263e82c}
+    .form-status{color:#ddafff}
+    .label-pill{background:#39254f;color:#e0b4ff}
+    .footer{background:#090712;color:#b6a7c8;border-top:1px solid #2a1d3d}
+    .footer-desc{color:#a89bb9}
+    .footer-menu a,.footer-bottom a{color:#c0b0d0}
+    .footer-bottom{border-color:#302341;color:#9686aa}
+    .dialog-backdrop{background:#070410e3}
+    .dialog{background:#211a30;border:1px solid #513d68;color:#f6f0ff}
+    .dialog p,.dialog li{color:#c3b2d3}
+    .dialog button{background:#392b4e;color:#fff}
+    .dialog .notice{background:#3c2e28;color:#ffe5ad}
+    @media(max-width:780px){.nav-links{background:#140e23;border-bottom-color:#3b2a52}.hero{padding-top:69px}}
+    @media(max-width:520px){.brand-mark{width:44px;height:44px;flex-basis:44px;background-size:108px 108px;background-position:center -20px}}
+    @media(prefers-reduced-motion:reduce){.btn,.service-card{transition:none!important}}
+
   </style>
 </head>
 <body>
   <div class="hero-shell" id="start">
     <header class="site-header"><div class="container nav">
-      <a class="brand" href="#start" aria-label="Baumgartner Smart Solution – zur Startseite"><span class="brand-mark" aria-hidden="true">BS</span><span>BAUMGARTNER<small>SMART SOLUTION</small></span></a>
+      <a class="brand" href="#start" aria-label="Baumgartner Smart Solution – zur Startseite"><span class="brand-mark" aria-hidden="true"></span><span>BAUMGARTNER<small>SMART SOLUTION</small></span></a>
       <button class="menu-toggle" id="menuToggle" aria-controls="navigation" aria-expanded="false" aria-label="Menü öffnen">☰ Menü</button>
       <nav class="nav-links" id="navigation" aria-label="Hauptnavigation"><a href="#leistungen">Leistungen</a><a href="#vorteile">Arbeitsweise</a><a href="#ablauf">Ablauf</a><a class="nav-cta" href="#kontakt">Projekt anfragen ↗</a></nav>
     </div></header>
@@ -50,11 +186,11 @@
       <article class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 9h20M7 6.5h.1M10 6.5h.1"/></svg></div><h3>Web-Apps & Plattformen</h3><p>Browserbasierte Software für Buchungen, Organisation, Verwaltung und digitale Zusammenarbeit – auf jedem Gerät.</p><span class="service-tag">Web · Cloud ↗</span></article>
       <article class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 6h6v6H5zM13 12h6v6h-6zM8 12v6h5M11 9h8v3"/></svg></div><h3>Digitalisierung & Abläufe</h3><p>Bestehende Prozesse verständlicher und effizienter gestalten – von digitalen Formularen bis zu maßgeschneiderten Verwaltungswerkzeugen.</p><span class="service-tag">Workflows · Integration ↗</span></article>
     </div></div></section>
-    <section class="section statement" id="vorteile"><div class="container statement-grid"><div><p class="eyebrow" style="color:#48d8ca">Unser Ansatz</p><h2>Technologie ist gut. Eine passende Lösung ist besser.</h2><p>Ein Softwareprojekt beginnt nicht mit möglichst vielen Funktionen, sondern mit der richtigen Frage: Was muss im Arbeitsalltag einfacher werden?</p><a class="btn btn-secondary" href="#kontakt">Über Ihr Vorhaben sprechen ↗</a></div><div class="benefits"><div class="benefit"><span class="benefit-num">01</span><div><h3>Verständlich statt unnötig komplex</h3><p>Klare Oberflächen und Funktionen, die einen konkreten Zweck erfüllen.</p></div></div><div class="benefit"><span class="benefit-num">02</span><div><h3>Auf Ihren Bedarf zugeschnitten</h3><p>Eine Lösung, die zu Ihren Prozessen passt – nicht umgekehrt.</p></div></div><div class="benefit"><span class="benefit-num">03</span><div><h3>Schrittweise und transparent</h3><p>Definierte Anforderungen, überprüfbare Ergebnisse und nachvollziehbare Umsetzung.</p></div></div></div></div></section>
+    <section class="section statement" id="vorteile"><div class="container statement-grid"><div><p class="eyebrow" style="color:#cba0ff">Unser Ansatz</p><h2>Technologie ist gut. Eine passende Lösung ist besser.</h2><p>Ein Softwareprojekt beginnt nicht mit möglichst vielen Funktionen, sondern mit der richtigen Frage: Was muss im Arbeitsalltag einfacher werden?</p><a class="btn btn-secondary" href="#kontakt">Über Ihr Vorhaben sprechen ↗</a></div><div class="benefits"><div class="benefit"><span class="benefit-num">01</span><div><h3>Verständlich statt unnötig komplex</h3><p>Klare Oberflächen und Funktionen, die einen konkreten Zweck erfüllen.</p></div></div><div class="benefit"><span class="benefit-num">02</span><div><h3>Auf Ihren Bedarf zugeschnitten</h3><p>Eine Lösung, die zu Ihren Prozessen passt – nicht umgekehrt.</p></div></div><div class="benefit"><span class="benefit-num">03</span><div><h3>Schrittweise und transparent</h3><p>Definierte Anforderungen, überprüfbare Ergebnisse und nachvollziehbare Umsetzung.</p></div></div></div></div></section>
     <section class="section" id="ablauf"><div class="container"><div class="section-head"><p class="eyebrow">So arbeiten wir</p><h2>Von der ersten Idee zur fertigen Anwendung.</h2><p>Ein klarer Ablauf schafft Planbarkeit – für kleine Vorhaben ebenso wie für umfangreichere Anwendungen.</p></div><div class="process-grid"><article class="process-step"><span class="step-no">SCHRITT 01</span><h3>Kennenlernen</h3><p>Wir besprechen Ihre Idee, Ihren Bedarf und das Ziel des Projekts.</p></article><article class="process-step"><span class="step-no">SCHRITT 02</span><h3>Konzept</h3><p>Funktionen, Nutzerführung, Umfang und technische Umsetzung werden definiert.</p></article><article class="process-step"><span class="step-no">SCHRITT 03</span><h3>Entwicklung</h3><p>Die Anwendung wird strukturiert umgesetzt und schrittweise überprüft.</p></article><article class="process-step"><span class="step-no">SCHRITT 04</span><h3>Übergabe</h3><p>Nach Abschluss und Abstimmung folgt die Übergabe der vereinbarten Lösung.</p></article></div></div></section>
     <section class="section contact-section" id="kontakt"><div class="container contact-grid"><div><p class="eyebrow">Kontakt</p><h2>Sie haben eine Idee? Sprechen wir darüber.</h2><p class="lead">Ob Kunden-App, Verwaltungsplattform oder individuell entwickelte Software: Beschreiben Sie kurz Ihr Vorhaben und wir können die nächsten Schritte besprechen.</p><p class="contact-location"><span class="location-dot" aria-hidden="true"></span>Standort Wien, Österreich</p></div><div class="contact-card"><span class="label-pill">Unverbindliche Projektanfrage</span><h3>Erzählen Sie uns von Ihrem Projekt.</h3><p class="fine">Diese erste Webseitenversion erstellt eine Anfrage zum Kopieren. Sie versendet noch keine Nachrichten.</p><form id="inquiryForm"><div class="form-row"><div class="field"><label for="name">Ihr Name *</label><input required id="name" name="name" autocomplete="name" placeholder="Vor- und Nachname"></div><div class="field"><label for="email">Ihre E-Mail *</label><input required type="email" id="email" name="email" autocomplete="email" placeholder="name@unternehmen.at"></div></div><div class="field"><label for="project">Art des Projekts</label><select name="project" id="project"><option>App-Entwicklung</option><option>Web-App / Plattform</option><option>Unternehmenssoftware</option><option>Digitalisierung / Automatisierung</option><option>Noch offen</option></select></div><div class="field"><label for="description">Ihr Vorhaben *</label><textarea required minlength="10" name="description" id="description" placeholder="Worum geht es bei Ihrer Idee? Welche Aufgaben soll die Software übernehmen?"></textarea></div><div class="form-foot"><button class="btn btn-primary" type="submit">Anfrage kopieren ↗</button><p class="form-hint">Vorschaumodus: kein Versand, keine Speicherung auf einem Server.</p></div><div class="form-status" id="formStatus" role="status" aria-live="polite"></div></form></div></div></section>
   </main>
-  <footer class="footer"><div class="container"><div class="footer-main"><div><a href="#start" class="brand"><span class="brand-mark" aria-hidden="true">BS</span><span>BAUMGARTNER<small>SMART SOLUTION</small></span></a><p class="footer-desc">Individuelle Apps und Softwarelösungen für Unternehmen. Entwickelt mit Blick auf das Wesentliche.</p></div><nav class="footer-menu" aria-label="Footernavigation"><a href="#leistungen">Leistungen</a><a href="#ablauf">Ablauf</a><a href="#kontakt">Kontakt</a></nav></div><div class="footer-bottom"><span>© <span id="year">2026</span> Baumgartner Smart Solution</span><div><a href="#" data-dialog="impressum">Impressum</a><a href="#" data-dialog="datenschutz">Datenschutz</a></div></div></div></footer>
+  <footer class="footer"><div class="container"><div class="footer-main"><div><a href="#start" class="brand"><span class="brand-mark" aria-hidden="true"></span><span>BAUMGARTNER<small>SMART SOLUTION</small></span></a><p class="footer-desc">Individuelle Apps und Softwarelösungen für Unternehmen. Entwickelt mit Blick auf das Wesentliche.</p></div><nav class="footer-menu" aria-label="Footernavigation"><a href="#leistungen">Leistungen</a><a href="#ablauf">Ablauf</a><a href="#kontakt">Kontakt</a></nav></div><div class="footer-bottom"><span>© <span id="year">2026</span> Baumgartner Smart Solution</span><div><a href="#" data-dialog="impressum">Impressum</a><a href="#" data-dialog="datenschutz">Datenschutz</a></div></div></div></footer>
   <div class="dialog-backdrop" id="dialogBackdrop" role="presentation"><section class="dialog" role="dialog" aria-modal="true" aria-labelledby="dialogTitle"><div class="dialog-header"><h2 id="dialogTitle"></h2><button type="button" id="dialogClose" aria-label="Dialog schließen">✕</button></div><div id="dialogBody"></div></section></div>
   <script>
     'use strict';
