@@ -220,7 +220,7 @@
       formStatus.textContent='Ihre Anfrage wird übermittelt …';
       try{
         const payload=Object.fromEntries(data.entries());
-        const response=await fetch(inquiryForm.action,{
+        const response=await fetch('https://formsubmit.co/ajax/office@ba-smartsolution.at',{
           method:'POST',
           headers:{'Accept':'application/json','Content-Type':'application/json'},
           body:JSON.stringify(payload)
