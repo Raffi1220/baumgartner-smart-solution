@@ -163,6 +163,12 @@
     @media(max-width:780px){.footer-details{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}}
     @media(max-width:520px){.footer-details{grid-template-columns:1fr;gap:20px;padding-top:26px}}
 
+    /* Preispositionierung: bewusst kompakt und dezent im oberen Sichtbereich */
+    .hero-price-message{max-width:550px;margin:25px 0 18px;padding:14px 18px 15px;border-left:3px solid #b98bff;border-radius:0 10px 10px 0;background:linear-gradient(110deg,rgba(152,95,215,.16),rgba(91,58,128,.06))}
+    .hero-price-message strong{display:block;color:#f5eaff;font-size:1.04rem;font-weight:800;line-height:1.4;letter-spacing:-.01em}
+    .hero-price-message p{margin:7px 0 0;color:#d1c2e3;font-size:.91rem;line-height:1.65}
+    @media(max-width:520px){.hero-price-message{margin:20px 0 16px;padding:13px 14px}.hero-price-message strong{font-size:.98rem}.hero-price-message p{font-size:.87rem}}
+
   </style>
 </head>
 <body>
@@ -175,6 +181,10 @@
     <div class="container hero"><div class="hero-content">
       <p class="eyebrow">Digitale Lösungen · Wien, Österreich</p>
       <h1>Ideen werden<br><span>digitale Lösungen.</span></h1>
+      <div class="hero-price-message" aria-label="Preis-Leistungs-Versprechen">
+        <strong>Professionelle Software. Ohne unnötig hohe Kosten.</strong>
+        <p>Qualität hat ihren Wert – aber individuelle Software muss kein Vermögen kosten. Mit direkter Zusammenarbeit, transparenter Kalkulation und einem klaren Fokus auf das Wesentliche bieten wir eine wirtschaftliche Alternative zu klassischen Agenturprojekten.</p>
+      </div>
       <p class="hero-lead">Individuelle Apps, moderne Web-Anwendungen und durchdachte Software für Unternehmen, die Abläufe vereinfachen und digital weiterkommen möchten.</p>
       <div class="hero-actions"><a class="btn btn-primary" href="#kontakt">Projekt besprechen <span aria-hidden="true">↗</span></a><a class="btn btn-secondary" href="#leistungen">Leistungen entdecken <span aria-hidden="true">↓</span></a></div>
       <div class="hero-meta"><span>Individuell entwickelt</span><span>Für Unternehmen</span><span>Klare Zusammenarbeit</span></div>
