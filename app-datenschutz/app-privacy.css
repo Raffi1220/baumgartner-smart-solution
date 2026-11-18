@@ -25,5 +25,17 @@ h1 span{color:#ca9bff}.intro{font-size:1.09rem;color:var(--muted);max-width:780p
 .footer{border-top:1px solid #352644;padding:30px 0;background:#090712;color:#a997bf;font-size:.88rem}
 .footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 .footer a{color:#c7aedc;text-decoration:none}.footer a:hover{text-decoration:underline}
+
+.privacy-intro{margin-top:0}
+.legal-article{max-width:950px;margin-top:30px}
+.legal-section{padding:27px 6px 28px;border-bottom:1px solid #352746;scroll-margin-top:28px}
+.legal-section:first-child{padding-top:5px}
+.legal-section h2{font-size:clamp(1.15rem,2.6vw,1.43rem);line-height:1.35;color:#f5eaff;margin:0 0 15px;letter-spacing:-.015em}
+.legal-section p,.legal-section li{font-size:.94rem;color:#c9bcd9;line-height:1.8;max-width:84ch}
+.legal-section p{margin:0 0 13px}
+.legal-section ul{padding-left:23px;margin:10px 0 19px}
+.legal-section li{padding-left:4px;margin:5px 0}
+.legal-section a{color:#dfb9ff;font-weight:720}
+.legal-section a:hover{color:#fff}
 @media(max-width:780px){.header-inner{align-items:flex-start;flex-direction:column;justify-content:center;padding:16px 0}.nav{gap:14px}.hero{padding-top:45px}.panel{padding:19px}.pdf-frame{min-height:480px}.secondary-link{display:block;margin:15px 0 0}}
 @media(prefers-reduced-motion:reduce){.card{transition:none}}
