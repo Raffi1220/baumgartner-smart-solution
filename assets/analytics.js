@@ -39,13 +39,14 @@ function initializeAnalytics() {
   if (footer) footer.append(settings); else { settings.classList.add('bss-analytics-fallback'); document.body.append(settings); }
   const panel = node('section', 'bss-analytics-panel'); panel.id = 'bss-analytics-preferences'; panel.setAttribute('aria-labelledby', 'bss-analytics-title');
   const heading = node('h2', '', 'Freiwillige Website-Analyse'); heading.id = 'bss-analytics-title';
-  const explanation = node('p', '', 'Dürfen wir mit Google Analytics 4 messen, welche öffentlichen Seiten aufgerufen werden? Google erhält dabei technische Verbindungsdaten und gegebenenfalls die externe Herkunfts-Domain. Formularinhalte, Chatnachrichten, Suchparameter und die vollständige Herkunftsadresse werden nicht übermittelt. Ohne Zustimmung bleibt die Analyse ausgeschaltet.');
-  const storageNotice = node('p', '', 'Ihre Auswahl gilt bis zu 180 Tage und lässt sich unten unter „Analyse-Einstellungen“ jederzeit ändern. Analyse-Cookies werden nur nach Zustimmung gesetzt.');
+  const controller = node('p', '', 'Verantwortlich: Raphael Baumgartner · Baumgartner Smart Solution.');
+  const explanation = node('p', '', 'Mit Ihrer freiwilligen Einwilligung nutzen wir Google Analytics 4, um Seitenaufrufe auszuwerten und unsere Website zu verbessern. Google erhält technische Nutzungsdaten und gegebenenfalls die externe Herkunfts-Domain. Formularinhalte, Chattexte und URL-Suchparameter werden nicht übermittelt. Ohne Zustimmung bleibt die Analyse ausgeschaltet.');
+  const storageNotice = node('p', '', 'Ihre Auswahl gilt bis zu 180 Tage. Analyse-Cookies werden nur nach Zustimmung gesetzt. Unter „Analyse-Einstellungen“ im Fußbereich können Sie Ihre Einwilligung jederzeit ohne Angabe von Gründen widerrufen. Die Rechtmäßigkeit der bisherigen Verarbeitung bleibt davon unberührt.');
   const privacy = node('a', '', 'Datenschutzhinweise'); privacy.href = '/datenschutz/';
   const status = node('p', 'bss-analytics-status'); status.setAttribute('role', 'status');
   const actions = node('div', 'bss-analytics-actions');
   const decline = node('button'), accept = node('button', '', 'Analyse erlauben'); decline.type = accept.type = 'button';
-  actions.append(decline, accept); panel.append(heading, explanation, storageNotice, privacy, status, actions); document.body.append(panel);
+  actions.append(decline, accept); panel.append(heading, controller, explanation, storageNotice, privacy, status, actions); document.body.append(panel);
 
   settings.addEventListener('click', () => { returnFocus = settings; showPanel(); decline.focus(); });
   decline.addEventListener('click', () => { choose('denied'); hidePanel(); });
