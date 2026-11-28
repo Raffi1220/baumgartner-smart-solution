@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /arbeitsbereich
+Disallow: /anmelden
+Disallow: /api/
+Sitemap: https://www.ba-smartsolution.at/sitemap.xml
