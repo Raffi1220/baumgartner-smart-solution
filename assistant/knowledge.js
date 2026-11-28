@@ -1,5 +1,5 @@
 // Curated, deterministic website answers. No model, remote request or storage.
-export const KNOWLEDGE_VERSION = '2026-11-27';
+export const KNOWLEDGE_VERSION = '2026-11-28';
 export const PROJECTS = Object.freeze([
   { value: 'App-Entwicklung', de: 'Mobile App', en: 'Mobile app' },
   { value: 'Web-App / Plattform', de: 'Web-App / Plattform', en: 'Web app / platform' },
@@ -23,8 +23,8 @@ const LINKS = {
 const records = [
   {
     id: 'pricing', patterns: [/\b(preis\w*|kost\w*|budget|angebot|price\w*|cost\w*|quot\w*|fee\w*)\b/],
-    de: 'Ein verbindlicher Preis hängt von Funktionen, Schnittstellen und Umfang Ihres Vorhabens ab. In der bestätigten Wissensbasis gibt es keine Preislisten oder Pauschalangebote. Ein kurzes Projektbriefing hilft, die Anforderungen für ein persönliches Angebot zu klären.',
-    en: 'A reliable quote depends on the features, integrations and scope of your project. The confirmed knowledge base does not contain a price list or fixed-price packages. A short project brief helps clarify the requirements for a personal quote.', sources: ['contact'], brief: true
+    de: 'Individuelle Software soll wirtschaftlich bleiben. Wir setzen auf schlanke Strukturen und einen klar abgestimmten Funktionsumfang – für ein faires Preis-Leistungs-Verhältnis. Der konkrete Preis hängt von Funktionen, Schnittstellen und Aufwand ab. Nach Klärung Ihrer Anforderungen erhalten Sie ein transparentes, persönliches Angebot. Ein kurzes Projektbriefing ist dafür ein guter erster Schritt.',
+    en: 'Custom software should be cost-effective. We keep our operations lean and agree on a clear set of features to offer fair value for money. The price depends on the features, integrations and work involved. Once we have clarified your requirements, you receive a transparent, tailored quote. A short project brief is a useful first step.', sources: ['contact'], brief: true
   },
   {
     id: 'timeline', patterns: [/\b(dauer|deadline|liefer\w*|verfugbar\w*|kapazitat\w*|zeitplan|wie lange|timeline|turnaround|delivery|availability|how long)\b/],

@@ -30,9 +30,28 @@ const publicContact=publicConfig?.version===1&&publicConfig.contact?.provider===
 const projectTypes=['App-Entwicklung','Web-App / Plattform','Unternehmenssoftware','Digitalisierung / Automatisierung','Noch offen'];
 document.addEventListener('click',e=>{const action=e.target.closest('[data-project]');if(action&&projectTypes.includes(action.dataset.project)&&$('#project'))$('#project').value=action.dataset.project;});
 window.addEventListener('bss:briefing',e=>{if(!form||!e.detail||typeof e.detail.description!=='string')return;const text=e.detail.description.trim(),input=$('#description'),previous=input.value.trim();const combined=previous&&previous!==text?previous+'\n\nProjektbriefing aus dem BSS Assistant:\n'+text:text;if(combined.length>8000){status.textContent='Das Briefing und Ihr vorhandener Text sind zusammen zu lang. Bitte kürzen Sie zunächst Ihre Beschreibung. Ihre bisherigen Angaben bleiben erhalten.';input.focus();return;}if(projectTypes.includes(e.detail.project))$('#project').value=e.detail.project;input.value=combined;status.textContent='Das Projektbriefing ist übernommen. Bitte prüfen und ergänzen Sie Ihre Angaben, bevor Sie die Anfrage absenden.';form.scrollIntoView({behavior:reducedMotion.matches?'instant':'smooth',block:'center'});$('#name').focus({preventScroll:true});});
+// Native constraint validation runs before `submit` and can otherwise leave the
+// old briefing status on screen. Keep an inline explanation visible as well as
+// the browser's field-level prompt, including when iOS AutoFill supplied a value.
+function showValidationFeedback(field){
+  field=form.querySelector?.(':invalid')||field;
+  const name=field?.name||field?.id;
+  const message=name==='name'?'Bitte geben Sie Ihren Namen ein.':name==='email'?'Bitte geben Sie eine vollständige, gültige E-Mail-Adresse ein.':name==='description'?'Bitte beschreiben Sie Ihr Vorhaben mit mindestens 10 und höchstens 8.000 Zeichen.':'Bitte prüfen Sie Ihre Pflichtfelder: Name, vollständige E-Mail-Adresse und eine Beschreibung mit mindestens 10 Zeichen.';
+  status.textContent=message+' Ihre übrigen Angaben bleiben erhalten.';
+  field?.setAttribute?.('aria-invalid','true');
+}
+form?.addEventListener('invalid',event=>showValidationFeedback(event.target),true);
+const clearFieldError=event=>{if(event.target.validity?.valid)event.target.removeAttribute?.('aria-invalid');};
+form?.addEventListener('input',clearFieldError);
+form?.addEventListener('change',clearFieldError);
 form?.addEventListener('submit',async e=>{
-  e.preventDefault();if(!form.reportValidity()||submit.disabled)return;
-  const values=new FormData(form);if(String(values.get('_honey')||'').trim()||values.get('botcheck'))return;
+  e.preventDefault();if(submit.disabled)return;
+  if(!form.reportValidity()){showValidationFeedback();return;}
+  const values=new FormData(form);
+  if(String(values.get('_honey')||'').trim()||values.get('botcheck')){
+    status.textContent='Die Formularprüfung hat den Versand blockiert. Ihre Angaben bleiben erhalten. Schreiben Sie uns bitte an office@ba-smartsolution.at, falls das Problem bestehen bleibt.';
+    return;
+  }
   if(publicPage&&!publicContact){status.textContent='Das Anfrageformular ist gerade nicht verfügbar. Ihre Angaben bleiben erhalten. Schreiben Sie uns bitte an office@ba-smartsolution.at.';return;}
   const submittedPayload=Object.fromEntries(values.entries());
   const payload=publicContact?{

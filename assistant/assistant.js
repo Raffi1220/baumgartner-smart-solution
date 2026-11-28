@@ -1,4 +1,4 @@
-import { answerQuestion, makeBriefing, PROJECTS, BRIEF_FIELDS } from './knowledge.js?v=679bee7e9db3567c';
+import { answerQuestion, makeBriefing, PROJECTS, BRIEF_FIELDS } from './knowledge.js?v=3d83286a95b8a91a';
 
 // Only the static public export supplies this non-secret endpoint configuration.
 // No platform service credential or model credential is sent by the browser.
